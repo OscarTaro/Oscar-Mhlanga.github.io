@@ -1,12 +1,11 @@
-
 .focus-page {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-3xl) 0;
     background-color: var(--color-background);
 }
 
 .page-header {
     text-align: center;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .page-header h1 {
@@ -23,7 +22,7 @@
 .focus-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -31,40 +30,46 @@
 .focus-card {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: 12px;
+    border-radius: var(--radius-lg);
     padding: var(--spacing-xl);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.focus-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+.focus-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        var(--color-accent) 0%,
+        var(--color-primary) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* SVG Icons */
+/* Icon styling - matching index.html style */
 .focus-icon {
     width: 56px;
     height: 56px;
     margin-bottom: var(--spacing-lg);
-    background-color: rgba(37, 99, 235, 0.08);
-    border-radius: 12px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(37, 99, 235, 0.15);
-}
-
-.focus-icon svg {
-    width: 28px;
-    height: 28px;
-    color: var(--color-accent);
-    stroke-width: 1.5;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .focus-card h2 {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-md);
     color: var(--color-primary);
+    font-weight: 600;
 }
 
 .focus-card p {
@@ -78,14 +83,18 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    border-top: 1px solid var(--color-border-light);
+    padding-top: var(--spacing-lg);
 }
 
 .focus-list li {
     padding: var(--spacing-xs) 0;
-    padding-left: var(--spacing-lg);
+    padding-left: var(--spacing-md);
     position: relative;
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
 }
 
 .focus-list li::before {
@@ -145,5 +154,30 @@
     
     .focus-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .focus-card {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .focus-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+    
+    .focus-card h2 {
+        font-size: 1.25rem;
     }
 }
