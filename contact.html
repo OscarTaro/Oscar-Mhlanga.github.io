@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Oscar Mhlanga</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/branding/logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <a href="index.html">Oscar Mhlanga Portfolio</a>
+            </div>
+            <ul class="navigation__menu">
+                <li><a href="index.html" class="navigation__link">Home</a></li>
+                <li><a href="projects.html" class="navigation__link">Projects</a></li>
+                <li><a href="focus.html" class="navigation__link">Focus</a></li>
+                <li><a href="about.html" class="navigation__link">About</a></li>
+                <li><a href="contact.html" class="navigation__link navigation__link--active">Contact</a></li>
+            </ul>
+            <button class="navigation__hamburger" aria-label="Toggle navigation menu">
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <main class="contact-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Contact</h1>
+                <p class="page-subtitle">Get in touch for collaboration or opportunities</p>
+            </header>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h2>Professional Contact</h2>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p>Primary: <a href="mailto:oscariance20@gmail.com">oscariance20@gmail.com</a></p>
+                                <p class="contact-note">For professional inquiries and collaboration</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Location</h3>
+                                <p>Harare, Zimbabwe</p>
+                                <p class="contact-note">Available for remote collaboration worldwide</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Online Profiles</h3>
+                                <div class="social-links">
+                                    <a href="https://github.com/OscarTaro" class="social-link">
+                                        <span class="social-icon">GitHub</span>
+                                        <span>github.com/OscarTaro</span>
+                                    </a>
+                                    <!-- Add LinkedIn when available -->
+                                    <a href="https://github.com/OscarTaro" class="social-link">
+                                        <span class="social-icon">Portfolio</span>
+                                        <span>oscar-mhlanga.dev</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Availability</h3>
+                                <p>Currently seeking:</p>
+                                <ul class="availability-list">
+                                    <li>Research internships in robotics/aerospace</li>
+                                    <li>Collaboration on engineering projects</li>
+                                    <li>Academic research opportunities</li>
+                                    <li>Industry mentorship</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-cta">
+                            <a href="downloads/Oscar_Mhlanga_CV.pdf" class="button button--primary" download>
+                                Download CV (PDF)
+                            </a>
+                            <p class="cta-note">Includes detailed academic and project background</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <div class="contact-form-card">
+                        <h2>Send a Message</h2>
+                        <p class="form-description">For project inquiries, collaboration proposals, or technical discussions.</p>
+                        
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="you@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="internship">Internship Opportunity</option>
+                                    <option value="research">Research Discussion</option>
+                                    <option value="technical">Technical Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required 
+                                          placeholder="Describe your inquiry in detail..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="consent" required>
+                                    <span>I understand that this message will be sent via email</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary button--large">
+                                Send Message
+                            </button>
+                        </form>
+                        
+                        <div class="form-note">
+                            <p><strong>Note:</strong> This form sends messages directly to my email. I typically respond within 48 hours for professional inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Response Time Information -->
+            <div class="response-info">
+                <div class="response-card">
+                    <h3>Typical Response Times</h3>
+                    <div class="response-grid">
+                        <div class="response-item">
+                            <span class="response-type">Professional Inquiries</span>
+                            <span class="response-time">24-48 hours</span>
+                        </div>
+                        <div class="response-item">
+                            <span class="response-type">Academic Collaboration</span>
+                            <span class="response-time">2-3 business days</span>
+                        </div>
+                        <div class="response-item">
+                            <span class="response-type">Project Proposals</span>
+                            <span class="response-time">1 week for detailed review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2024 Oscar Mhlanga. Engineering Portfolio.</p>
+                    <p>Documenting technical growth in aerospace and robotics engineering.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:oscariance20@gmail.com" class="footer__link">Email</a>
+                    <a href="https://github.com/OscarTaro" class="footer__link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/oscar-mhlanga-a473022b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+
+                    <a href="downloads/Oscar_Mhlanga_CV.pdf" class="footer__link" download>CV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+    
+    <!-- Contact Form Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('.contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    
+                    // In a real implementation, you would send this to a server
+                    // For now, we'll simulate a successful submission
+                    
+                    // Create email link (fallback for static site)
+                    const subject = encodeURIComponent(formData.get('subject') + ' - From Portfolio Contact Form');
+                    const body = encodeURIComponent(
+                        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${formData.get('message')}`
+                    );
+                    
+                    const mailtoLink = `mailto:oscariance20@gmail.com?subject=${subject}&body=${body}`;
+                    
+                    // Open email client
+                    window.location.href = mailtoLink;
+                    
+                    // Show success message
+                    alert('Thank you for your message. Your email client will open with a pre-filled message. Please send it to complete your inquiry.');
+                    
+                    // Reset form
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

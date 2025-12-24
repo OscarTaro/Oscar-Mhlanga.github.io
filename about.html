@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Oscar Mhlanga</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/pages/about.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/branding/logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <a href="index.html">Oscar Mhlanga Portfolio</a>
+            </div>
+            <ul class="navigation__menu">
+                <li><a href="index.html" class="navigation__link">Home</a></li>
+                <li><a href="projects.html" class="navigation__link">Projects</a></li>
+                <li><a href="focus.html" class="navigation__link">Focus</a></li>
+                <li><a href="about.html" class="navigation__link navigation__link--active">About</a></li>
+                <li><a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+            <button class="navigation__hamburger" aria-label="Toggle navigation menu">
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Page -->
+    <main class="about-page">
+        <div class="container">
+            <div class="about-content">
+                <!-- Text Section -->
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <div class="about-paragraphs">
+                        <p>I'm an Aeronautical Engineering student with a focus on avionics, robotics, and embedded systems. My work sits at the intersection of flight systems, autonomous control, and hardware implementation. I approach engineering problems through first-principles thinking and practical experimentation.</p>
+                        
+                        <p>My technical interests include avionics for UAVs, robotic systems (particularly hexapods and self-balancing platforms), and RF systems including DIY radar and radio communications. I believe in building systems that are not only functional but also demonstrate clear engineering principles and robust design.</p>
+                        
+                        <p>Currently pursuing my degree while working on practical projects that apply control theory, embedded programming, and mechanical design to solve real-world problems. My goal is to develop systems that are reliable, well-documented, and demonstrate clear engineering insight.</p>
+                    </div>
+                    <div class="about-cta">
+                        <a href="downloads/Oscar_Mhlanga_CV.pdf" class="button button--primary" download>Download CV</a>
+                    </div>
+                </div>
+                
+                <!-- Photo Section -->
+                <div class="about-photo">
+                    <div class="photo-container">
+                        <img src="assets/images/content/oscar-profile.jpg" alt="Oscar Mhlanga" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2024 Oscar Mhlanga</p>
+                    <p>Aeronautical Engineering & Robotics</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:oscariance20@gmail.com">Email</a>
+                    <a href="https://github.com/OscarTaro">GitHub</a>
+                    <a href="https://www.linkedin.com/in/oscar-mhlanga-a473022b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+</body>
+</html>

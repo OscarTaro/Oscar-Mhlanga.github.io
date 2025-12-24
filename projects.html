@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Oscar Mhlanga</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/pages/projects.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/branding/logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <a href="index.html">Oscar Mhlanga Portfolio</a>
+            </div>
+            <ul class="navigation__menu">
+                <li><a href="index.html" class="navigation__link">Home</a></li>
+                <li><a href="projects.html" class="navigation__link navigation__link--active">Projects</a></li>
+                <li><a href="focus.html" class="navigation__link">Focus</a></li>
+                <li><a href="about.html" class="navigation__link">About</a></li>
+                <li><a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+            <button class="navigation__hamburger" aria-label="Toggle navigation menu">
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Page -->
+    <main class="projects-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Engineering Projects</h1>
+                <p class="page-subtitle">Practical applications of avionics, robotics, and embedded systems</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="avionics">Avionics</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="embedded">Embedded</button>
+                <button class="filter-btn" data-filter="rf">RF Systems</button>
+            </div>
+
+            <!-- Projects Grid - Horizontal Cards -->
+            <div class="projects-horizontal-grid">
+                <!-- Robotic Arm -->
+                <article class="project-horizontal-card" data-categories="robotics embedded">
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <h2>6-DOF Robotic Arm</h2>
+                            <div class="project-tags">
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Embedded</span>
+                                <span class="status status-iterative">Iterative</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Developing a 6-degree-of-freedom robotic manipulator with real-time inverse kinematics for precise object manipulation. Focus on control algorithms and sensor feedback.</p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>Python</span>
+                            <span>ROS</span>
+                        </div>
+                        <a href="projects/robotic-arm/" class="button button--outline">View Details</a>
+                    </div>
+                    <div class="project-card-image">
+                        <div class="image-container">
+                            <img src="assets/images/content/robotic-arm.jpg" alt="Robotic Arm" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UAV Autopilot -->
+                <article class="project-horizontal-card" data-categories="avionics embedded">
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <h2>Fixed-Wing UAV Autopilot</h2>
+                            <div class="project-tags">
+                                <span class="tag">Avionics</span>
+                                <span class="tag">Embedded</span>
+                                <span class="status status-ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Designing an embedded autopilot system for autonomous UAV navigation with sensor fusion algorithms and PID control loops for stable flight under varying conditions.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>PX4</span>
+                            <span>MATLAB</span>
+                        </div>
+                        <a href="projects/uav-autopilot/" class="button button--outline">View Details</a>
+                    </div>
+                    <div class="project-card-image">
+                        <div class="image-container">
+                            <img src="assets/images/content/uav-autopilot.jpg" alt="UAV Autopilot" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Hexapod Robot -->
+                <article class="project-horizontal-card" data-categories="robotics">
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <h2>Hexapod Robot Platform</h2>
+                            <div class="project-tags">
+                                <span class="tag">Robotics</span>
+                                <span class="status status-completed">Completed</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Building a six-legged robotic platform with dynamic gait generation and terrain adaptation. Implementing inverse kinematics for leg control and obstacle navigation.</p>
+                        <div class="project-tech">
+                            <span>ROS2</span>
+                            <span>Python</span>
+                            <span>Gazebo</span>
+                        </div>
+                        <a href="projects/hexapod/" class="button button--outline">View Details</a>
+                    </div>
+                    <div class="project-card-image">
+                        <div class="image-container">
+                            <img src="assets/images/content/hexapod.jpg" alt="Hexapod Robot" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DIY Radar -->
+                <article class="project-horizontal-card" data-categories="rf embedded">
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <h2>DIY Radar System</h2>
+                            <div class="project-tags">
+                                <span class="tag">RF Systems</span>
+                                <span class="tag">Embedded</span>
+                                <span class="status status-ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Developing a frequency-modulated continuous wave radar system for object detection and ranging. Focus on signal processing and hardware implementation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Arduino</span>
+                            <span>RF Design</span>
+                        </div>
+                        <a href="projects/radar-system/" class="button button--outline">View Details</a>
+                    </div>
+                    <div class="project-card-image">
+                        <div class="image-container">
+                            <img src="assets/images/content/radar-system.jpg" alt="DIY Radar" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2024 Oscar Mhlanga</p>
+                    <p>Aeronautical Engineering & Robotics</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:oscariance20@gmail.com">Email</a>
+                    <a href="https://github.com/OscarTaro">GitHub</a>
+                    <a href="https://www.linkedin.com/in/oscar-mhlanga-a473022b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+    <script src="assets/js/projects-filter.js" defer></script>
+</body>
+</html>

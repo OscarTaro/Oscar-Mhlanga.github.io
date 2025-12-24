@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Mhlanga</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/branding/logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <a href="index.html">Oscar Mhlanga Portfolio</a>
+            </div>
+            <ul class="navigation__menu">
+                <li><a href="index.html" class="navigation__link navigation__link--active">Home</a></li>
+                <li><a href="projects.html" class="navigation__link">Projects</a></li>
+                <li><a href="focus.html" class="navigation__link">Focus</a></li>
+                <li><a href="about.html" class="navigation__link">About</a></li>
+                <li><a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+            <button class="navigation__hamburger" aria-label="Toggle navigation menu">
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Oscar Taropafadzwa Mhlanga</h1>
+            <p class="hero__subtitle">
+                <strong>Aeronautical Engineering Student</strong> | Avionics, Robotics & Embedded Systems
+            </p>
+            <p class="hero__statement">
+                Designing and implementing avionics, robotics, and RF systems through practical engineering and embedded programming.
+            </p>
+            <div class="hero__cta">
+                <a href="projects.html" class="button button--primary">View Projects</a>
+                <a href="downloads/Oscar_Mhlanga_CV.pdf" class="button button--secondary" download>Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Engineering Focus Areas -->
+    <section class="focus-areas">
+        <div class="container">
+            <h2 class="section-title">Engineering Focus Areas</h2>
+            <div class="focus-grid">
+                <!-- Avionics Card -->
+                <div class="focus-card">
+                    <h3 class="focus-card__title">Avionics & Flight Systems</h3>
+                    <ul class="focus-card__list">
+                        <li>Flight control systems development</li>
+                        <li>Sensor fusion & navigation algorithms</li>
+                        <li>UAV autopilot implementation</li>
+                        <li>Aircraft electronics & instrumentation</li>
+                    </ul>
+                </div>
+
+                <!-- Robotics Card -->
+                <div class="focus-card">
+                    <h3 class="focus-card__title">Robotics & Kinematics</h3>
+                    <ul class="focus-card__list">
+                        <li>Inverse kinematics for manipulation</li>
+                        <li>Motion planning & trajectory generation</li>
+                        <li>Hexapod & multi-legged platforms</li>
+                        <li>Self-balancing control systems</li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Systems Card -->
+                <div class="focus-card">
+                    <h3 class="focus-card__title">Embedded Systems</h3>
+                    <ul class="focus-card__list">
+                        <li>Real-time microcontroller programming</li>
+                        <li>Hardware-software co-design</li>
+                        <li>Sensor interface & signal processing</li>
+                        <li>Power management & optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Engineering Projects</h2>
+            <div class="featured-grid">
+                <!-- Robotic Arm Project Card -->
+                <article class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">6-DOF Robotic Arm with Inverse Kinematics</h3>
+                        <p class="project-card__description">
+                            Developing a 6-degree-of-freedom robotic manipulator with real-time inverse kinematics for precise object manipulation. The system implements control algorithms with sensor feedback for adaptive positioning in dynamic environments.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Embedded</span>
+                            <span class="tag">Control Systems</span>
+                        </div>
+                        <a href="projects/robotic-arm/" class="button button--primary">View Project Details</a>
+                    </div>
+                    <div class="project-card__image">
+                        <img src="assets/images/content/robotic-arm.jpg" alt="Robotic Arm Prototype" loading="lazy">
+                    </div>
+                </article>
+
+                <!-- UAV Autopilot Project Card -->
+                <article class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Fixed-Wing UAV Autopilot System</h3>
+                        <p class="project-card__description">
+                            Designing an embedded autopilot system for autonomous UAV navigation with sensor fusion algorithms and PID control loops. The system maintains stable flight under varying atmospheric conditions with waypoint navigation.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">Avionics</span>
+                            <span class="tag">Embedded</span>
+                            <span class="tag">Control Systems</span>
+                        </div>
+                        <a href="projects/uav-autopilot/" class="button button--primary">View Project Details</a>
+                    </div>
+                    <div class="project-card__image">
+                        <img src="assets/images/content/uav-autopilot.jpg" alt="UAV Autopilot System" loading="lazy">
+                    </div>
+                </article>
+            </div>
+            <div class="view-all-container">
+                <a href="projects.html" class="button button--secondary">View All Engineering Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Working On -->
+    <section class="current-work">
+        <div class="container">
+            <div class="current-work-header">
+                <div class="divider-line"></div>
+                <h2 class="current-work-title">Currently Working On</h2>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="current-work-content">
+                <ul class="current-work-list">
+                    <li><strong>Hexapod Robot Platform:</strong> Developing a six-legged robotic platform with dynamic gait generation and terrain adaptation algorithms</li>
+                    <li><strong>Quad-X Automated Drone:</strong> Building a quadcopter system with automated mission planning and computer vision for autonomous navigation</li>
+                    <li><strong>RF Radar System:</strong> Designing a frequency-modulated continuous wave radar for object detection and ranging applications</li>
+                    <li><strong>Embedded Control Unit:</strong> Developing a real-time control system for precise motor control with sensor feedback loops</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2024 Oscar Mhlanga</p>
+                    <p>Aeronautical Engineering & Robotics</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:oscariance20@gmail.com">Email</a>
+                    <a href="https://github.com/OscarTaro">GitHub</a>
+                    <a href="https://www.linkedin.com/in/oscar-mhlanga-a473022b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+</body>
+</html>

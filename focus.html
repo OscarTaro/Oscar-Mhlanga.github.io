@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus | Oscar Mhlanga</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components/navigation.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/pages/focus.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/branding/logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="navigation__container">
+            <div class="navigation__logo">
+                <a href="index.html">Oscar Mhlanga Portfolio</a>
+            </div>
+            <ul class="navigation__menu">
+                <li><a href="index.html" class="navigation__link">Home</a></li>
+                <li><a href="projects.html" class="navigation__link">Projects</a></li>
+                <li><a href="focus.html" class="navigation__link navigation__link--active">Focus</a></li>
+                <li><a href="about.html" class="navigation__link">About</a></li>
+                <li><a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+            <button class="navigation__hamburger" aria-label="Toggle navigation menu">
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+                <span class="navigation__hamburger-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Focus Page -->
+    <main class="focus-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Technical Focus</h1>
+                <p class="page-subtitle">Areas of engineering I work in</p>
+            </div>
+
+            <div class="focus-grid">
+                <!-- Avionics -->
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                    <h2>Avionics & Flight Systems</h2>
+                    <p>Design and implementation of aircraft electronic systems, flight control algorithms, and sensor integration for UAVs and autonomous flight platforms.</p>
+                    <ul class="focus-list">
+                        <li>Flight control systems</li>
+                        <li>Sensor fusion & navigation</li>
+                        <li>Autopilot development</li>
+                        <li>RF communication systems</li>
+                    </ul>
+                </div>
+
+                <!-- Robotics -->
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 8L22 12L18 16"/>
+                            <path d="M6 8L2 12L6 16"/>
+                            <path d="M2 12H22"/>
+                            <path d="M12 2L12 22"/>
+                        </svg>
+                    </div>
+                    <h2>Robotics</h2>
+                    <p>Development of robotic systems with emphasis on locomotion, manipulation, and autonomous control. Special interest in hexapods and self-balancing platforms.</p>
+                    <ul class="focus-list">
+                        <li>Inverse kinematics</li>
+                        <li>Motion planning</li>
+                        <li>Embedded control</li>
+                        <li>Sensor integration</li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Systems -->
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h2>Embedded Systems</h2>
+                    <p>Real-time embedded programming for control applications, with focus on reliability, efficiency, and hardware-software co-design.</p>
+                    <ul class="focus-list">
+                        <li>Microcontroller programming</li>
+                        <li>Real-time operating systems</li>
+                        <li>Hardware interface design</li>
+                        <li>Power management</li>
+                    </ul>
+                </div>
+
+                <!-- RF & Communications -->
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                            <path d="M12 2V22"/>
+                        </svg>
+                    </div>
+                    <h2>RF & Communications</h2>
+                    <p>Design and implementation of radio frequency systems for communication, sensing, and navigation applications.</p>
+                    <ul class="focus-list">
+                        <li>DIY radar systems</li>
+                        <li>Radio communications</li>
+                        <li>Signal processing</li>
+                        <li>Antenna design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2024 Oscar Mhlanga</p>
+                    <p>Aeronautical Engineering & Robotics</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:oscariance20@gmail.com">Email</a>
+                    <a href="https://github.com/OscarTaro">GitHub</a>
+                    <a href="https://www.linkedin.com/in/oscar-mhlanga-a473022b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+</body>
+</html>

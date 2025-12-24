@@ -1,0 +1,140 @@
+/* ============================================
+   TYPOGRAPHY SYSTEM
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+h1 { 
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 { 
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+}
+
+h3 { 
+    font-size: 1.75rem;
+}
+
+h4 { 
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+strong, b {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* ============================================
+   CODE & TECHNICAL TYPOGRAPHY
+   ============================================ */
+
+code, pre, kbd, samp {
+    font-family: var(--font-family-mono);
+    font-size: 0.95rem;
+}
+
+code {
+    background-color: var(--color-background);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    color: var(--color-accent);
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #1E293B;
+    color: #E2E8F0;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    margin: var(--spacing-lg) 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ============================================
+   LISTS
+   ============================================ */
+
+ul, ol {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-xl);
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+}
+
+ul ul, ol ol {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+
+blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding-left: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
+   SMALL TEXT & LABELS
+   ============================================ */
+
+small, .text-small {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.text-muted {
+    color: var(--color-muted);
+}
+
+/* ============================================
+   LINE HEIGHT VARIATIONS
+   ============================================ */
+
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-normal { line-height: 1.6; }
+.leading-relaxed { line-height: 1.75; }

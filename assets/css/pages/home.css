@@ -1,0 +1,250 @@
+/* ============================================
+   HOME PAGE - ENGINEERING STYLE
+   ============================================ */
+
+/* Hero Section */
+.hero {
+    padding: var(--spacing-2xl) 0;
+    background: #1E3A5F;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.hero__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
+}
+
+.hero__subtitle strong {
+    color: #FFFFFF;
+}
+
+.hero__statement {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__cta {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Focus Areas */
+.focus-areas {
+    padding: var(--spacing-3xl) 0;
+    background-color: #F7F9FB;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-2xl);
+    color: #0F172A;
+    font-weight: 600;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Featured Projects */
+.featured-projects {
+    padding: var(--spacing-3xl) 0;
+    background-color: #FFFFFF;
+}
+
+.featured-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto var(--spacing-2xl);
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+/* Currently Working On */
+.current-work {
+    padding: var(--spacing-3xl) 0;
+    background-color: #F7F9FB;
+}
+
+.current-work-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: #E2E8F0;
+}
+
+.current-work-title {
+    font-size: 2rem;
+    color: #0F172A;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 16px;
+}
+
+.current-work-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.current-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.current-work-list li {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    padding: 0 20px;
+}
+
+.current-work-list li strong {
+    color: #0F172A;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    padding: var(--spacing-xl) 0;
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+.footer__info p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.95rem;
+}
+
+.footer__copyright {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__links {
+    display: flex;
+    gap: var(--spacing-xl);
+}
+
+.footer__links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.footer__links a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+    
+    .hero__cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero__cta .button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .section-title,
+    .current-work-title {
+        font-size: 1.75rem;
+    }
+    
+    .focus-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .current-work-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .divider-line {
+        width: 100%;
+    }
+    
+    .current-work-title {
+        padding: 0;
+    }
+    
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer__links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__subtitle {
+        font-size: 1rem;
+    }
+    
+    .current-work-list li {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
