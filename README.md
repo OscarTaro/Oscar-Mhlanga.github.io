@@ -13,10 +13,13 @@ It serves as a structured technical record of my projects, skills, and engineeri
 
 ### Primary Focus Areas
 
-- Avionics & Flight Systems  
+- Avionics & Flight Systems
+- Electronics & Electronics Design  
 - Robotics & Automation  
 - Embedded Systems  
-- RF & Communication Systems  
+- RF & Communication Systems
+- Python & C++ Programming
+- FullStack Web & Software Development and Design
 
 ---
 
